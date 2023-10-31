@@ -48,7 +48,7 @@ function checkAnswer(currLevel){
 function nextSequence(){
     userClickedPattern=[];
     level++;
-    $("#level-title").text("level"+level);
+    $("#level-title").text("level:"+level);
     var randomNo=Math.floor(Math.random() * 4);
     var randomChoosenColor=buttonColours[randomNo];
     gamePattern.push(randomChoosenColor);

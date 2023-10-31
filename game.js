@@ -22,7 +22,6 @@ $(".btn").click(function(){
 });
 function checkAnswer(currLevel){
     if(gamePattern[currLevel]===userClickedPattern[currLevel]){
-        console.log("Till now sequence is right");//no role for logic of game,just for me
         if(gamePattern.length===userClickedPattern.length){
             setTimeout(function(){
                 nextSequence();
@@ -30,7 +29,6 @@ function checkAnswer(currLevel){
         }
     }
     else{
-        console.log("You Are Wrong!");//for me
         // var audio=new Audio("sounds/wrong.mp3");
         // audio.play();
         playSound("wrong");
